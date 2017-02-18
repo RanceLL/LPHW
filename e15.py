@@ -14,7 +14,10 @@ txt_again = open(file_again)
 
 print txt_again.read()
 
-#Also
-#print "Type the filename :"
-#txt_again = open(raw_input(">>>"))
-#print txt_again.read()
+#Other approaches:
+print "Type the filename :"
+txt= open(raw_input(">>>"))
+print txt.read()
+#More
+print "Type the filename :"
+print open(raw_input(">>>")).read()
