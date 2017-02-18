@@ -21,3 +21,14 @@ print txt.read()
 #More
 print "Type the filename :"
 print open(raw_input(">>>")).read()
+
+#Start python again and use open from the prompt. Notice how you can open files and run read on them right there?
+print open("e17.py").read()
+
+#OR
+$ python 
+>>> xyz = open ("ex16.py")
+>>> print xyz.read()
+>>> xyz.close()
+
+
