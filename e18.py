@@ -1,32 +1,41 @@
-from sys import argv
+def print_two(*args):
+#The sigh of * means there are tons of args here need to be unpacked later
+     arg1, arg2 = args
+#Unpacking args.
+	arg1, arg2 = args
+	print "arg1: %r, arg2: %r" % (arg1, arg2)
 
-script, filename = argv
+def print_two_again(arg1, arg2):
+	print "arg1: %r, arg2: %r" % (arg1, arg2)
 
-print "We're going to erase %r." % filename
-print "If you don't want that, hit CTRL+C (^C) or CMD+C (%s C)." % u'\u2318'
-print "If you do want that, hit RETURN."
+def print_one(arg1):
+	print "arg1: %r" % arg1
 
-raw_input("?")
+def print_none():
+	print "I got nothin'."
 
-print """
-Opening the file...
-.............
-.............
-.............
-"""
-target = open(filename, 'w')
+print_two("Zed", "Shaw")
+print_two_again("Zed", "Shaw")
+print_one("First!")
+print_none()
 
-print "Truncating the file. Goodbye!"
+#Try to build a function!
+A = raw_input("Let's input some numbers >>> ")
+
+def C_I2C(A):
+	C = int(A) * 2.5
+	print "So,%s inches equal %s cms" % (A, C)
+print C_I2C(A)
+
+#It will be also OK.
+def C_I2C(A):
+	C = int(A) * 2.5
+	return "So,%s inches equal %s cms" % (A, C)
+    ##To avoid getting 'None' in the output, use Return in stead of print here.
+A = raw_input("Let's input some numbers >>> ")
+    ##In stead of place this sentence in in the head of script.
+print C_I2C(A)
 
 
-print "Now I'm going to ask you for three lines."
 
-line1 = raw_input("line 1: ")
-line2 = raw_input("line 2: ")
-line3 = raw_input("line 3: ")
- 
-print "I'm going to write these to the file."
-target.write(line1 + "\n" + line2 + "\n" + line3 + "\n")
 
-print "And finally, we close it."
-target.close()
