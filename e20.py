@@ -40,8 +40,8 @@ print_a_line(current_line, current_file)
 ##fileObject is the file pointer you're working with;  ###not quite sure what's this sentence mean.
 ##offset means how many positions you will move
 ##whence -- This is optional and defaults to 
-###0 which means absolute file positioning, other values are 
-###1 which means seek relative to the current position and 
+###0 which means absolute file positioning,
+###1 which means seek relative to the current position, 
 ###2 means seek relative to the file's end.
 
 #When you open a file, the system points to the beginning of the file. Any read or write you do will happen from the beginning. A seek() operation moves that pointer to some other part of the file so you can read or write at that place.
