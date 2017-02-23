@@ -1,5 +1,3 @@
-!= #Not Equal
-
 or = if there is a T, then T
 and = if there is a F, then F
 !or = if there is a T, then F
