@@ -12,7 +12,7 @@ while len(stuff) != 10:
 	print "So there's %d items now." % len(stuff)
 
 print "There we go: ", stuff
-ariga
+
 print "Let's do something with sutff."
 
 print stuff[1]
